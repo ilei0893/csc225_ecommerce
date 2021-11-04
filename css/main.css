@@ -112,6 +112,18 @@ html {
   margin-bottom: 2em;
 }
 
-.title.cart {
+.title-cart {
+  padding-top: 2em;
+  padding-bottom: 2em;
   text-align: center;
+}
+
+.checkout-title-shipping {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+.container.cart {
+  padding-bottom: 2em;
 }

@@ -82,89 +82,180 @@
       </div>
     </nav>
     <div class="container cart">
-      <form class="row g-3 needs-validation" novalidate>
+      <div class="checkout-title-shipping">
+        <h2>Shipping Information</h2>
+      </div>
+      <form class="row g-3" method="get">
         <div class="col-md-4">
-          <label for="validationCustom01" class="form-label">First name</label>
+          <label for="validationDefault01" class="form-label">Full name</label>
           <input
             type="text"
             class="form-control"
-            id="validationCustom01"
-            value="Mark"
+            id="validationDefault01"
             required
           />
-          <div class="valid-feedback">Looks good!</div>
         </div>
         <div class="col-md-4">
-          <label for="validationCustom02" class="form-label">Last name</label>
+          <label for="validationDefault02" class="form-label">Email</label>
           <input
             type="text"
             class="form-control"
-            id="validationCustom02"
-            value="Otto"
+            id="validationDefault02"
             required
           />
-          <div class="valid-feedback">Looks good!</div>
         </div>
         <div class="col-md-4">
-          <label for="validationCustomUsername" class="form-label"
-            >Username</label
+          <label for="validationDefaultAddress" class="form-label"
+            >Address</label
           >
-          <div class="input-group has-validation">
-            <span class="input-group-text" id="inputGroupPrepend">@</span>
+          <div class="input-group">
             <input
               type="text"
               class="form-control"
-              id="validationCustomUsername"
-              aria-describedby="inputGroupPrepend"
+              id="validationDefaultAddress"
               required
             />
-            <div class="invalid-feedback">Please choose a username.</div>
           </div>
         </div>
         <div class="col-md-6">
-          <label for="validationCustom03" class="form-label">City</label>
+          <label for="validationDefault03" class="form-label">City</label>
           <input
             type="text"
             class="form-control"
-            id="validationCustom03"
+            id="validationDefault03"
             required
           />
-          <div class="invalid-feedback">Please provide a valid city.</div>
         </div>
         <div class="col-md-3">
-          <label for="validationCustom04" class="form-label">State</label>
-          <select class="form-select" id="validationCustom04" required>
+          <label for="validationDefault04" class="form-label">State</label>
+          <select class="form-select" id="validationDefault04" required>
             <option selected disabled value="">Choose...</option>
-            <option>...</option>
+            <option value="New York is the best state">
+              New York is the best state
+            </option>
           </select>
-          <div class="invalid-feedback">Please select a valid state.</div>
         </div>
         <div class="col-md-3">
-          <label for="validationCustom05" class="form-label">Zip</label>
+          <label for="validationDefault05" class="form-label">Zip</label>
           <input
             type="text"
             class="form-control"
-            id="validationCustom05"
+            id="validationDefault05"
+            name="zip"
             required
           />
-          <div class="invalid-feedback">Please provide a valid zip.</div>
         </div>
-        <div class="col-12">
-          <div class="form-check">
+      <hr />
+      <div class="checkout-title-shipping">
+        <h2>Credit Card Information</h2>
+      </div>
+      <form class="row g-3" method="get">
+        <div class="col-md-4">
+          <label for="validationDefault07" class="form-label"
+            >Credit Card #</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="validationDefault07"
+            required
+          />
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault08" class="form-label"
+            >Name on card</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="validationDefault08"
+            required
+          />
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefaultBillingAddress" class="form-label"
+            >Billing Address</label
+          >
+          <div class="input-group">
             <input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="invalidCheck"
+              type="text"
+              class="form-control"
+              id="validationDefaultBillingAddress"
               required
             />
-            <label class="form-check-label" for="invalidCheck">
-              Agree to terms and conditions
-            </label>
-            <div class="invalid-feedback">
-              You must agree before submitting.
-            </div>
           </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationDefault09" class="form-label">City</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationDefault09"
+            required
+          />
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault10" class="form-label">State</label>
+          <select class="form-select" id="validationDefault10" required>
+            <option selected disabled value="">Choose...</option>
+            <option value="New York is the best state">
+              New York is the best state
+            </option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault11" class="form-label">Zip</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationDefault11"
+            required
+          />
+        </div>
+        <div class="col-2">
+          <label class="form-label">Expiration Date</label>
+          <br />
+          <label for="validationDefault13" class="form-label">Month</label>
+          <select
+            class="form-select"
+            id="validationDefault13"
+            aria-label="Default select example"
+          >
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+        </div>
+        <div class="col-3">
+          <br />
+          <label for="validationDefault14" class="form-label">Year</label>
+          <select
+            class="form-select"
+            id="validationDefault14"
+            aria-label="Default select example"
+          >
+            <option value="2021" selected>2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+            <option value="2031">2031</option>
+            <option value="2032">2032</option>
+          </select>
         </div>
         <div class="col-12">
           <button class="btn btn-primary" type="submit">Submit form</button>
